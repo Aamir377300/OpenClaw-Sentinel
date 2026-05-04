@@ -1,0 +1,36 @@
+# Environment — never commit secrets
+.env
+
+# Build outputs
+custom-skills/*/dist/
+custom-skills/*/node_modules/
+bridge/dist/
+bridge/node_modules/
+
+# Audit log (may contain sensitive data)
+audit_log.json
+
+# Workspace contents (user data)
+workspace/
+
+# OpenClaw framework (cloned via setup.sh)
+openclaw-core/
+.openclaw/
+
+# OpenClaw runtime state
+openclaw-config/agents/
+openclaw-config/logs/
+openclaw-config/tasks/
+openclaw-config/identity/
+openclaw-config/canvas/
+openclaw-config/*.sqlite*
+openclaw-config/*.jsonl
+openclaw-config/*.bak*
+openclaw-config/*.last-good
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
