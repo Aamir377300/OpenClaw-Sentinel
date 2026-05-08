@@ -1,0 +1,15 @@
+{
+  "name": "@openclaw-custom/workspace-skill",
+  "version": "1.0.0",
+  "description": "OpenClaw Workspace Skill — sandboxed file operations within /workspace",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "20.14.0",
+    "typescript": "5.4.5"
+  }
+}
