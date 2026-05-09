@@ -1,0 +1,61 @@
+{
+  "agents": {
+    "defaults": {
+      "model": "${OPENCLAW_MODEL}",
+      "bootstrapMaxChars": 2000,
+      "bootstrapTotalMaxChars": 4000
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "nvidia_nim": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1",
+        "apiKey": "${NVIDIA_API_KEY}",
+        "models": [
+          {
+            "id": "${NVIDIA_MODEL}",
+            "name": "NVIDIA NIM Model",
+            "contextWindow": 131072
+          }
+        ]
+      },
+      "groq": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "apiKey": "${GROQ_API_KEY}",
+        "models": [
+          {
+            "id": "${GROQ_MODEL}",
+            "name": "Groq Model"
+          }
+        ]
+      },
+      "openai": {
+        "apiKey": "${OPENAI_API_KEY}",
+        "models": [
+          {
+            "id": "${OPENAI_MODEL}",
+            "name": "OpenAI Model"
+          }
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "nvidia_nim": {
+        "enabled": true
+      },
+      "groq": {
+        "enabled": true
+      },
+      "openai": {
+        "enabled": true
+      }
+    }
+  },
+  "gateway": {
+    "host": "0.0.0.0",
+    "port": 3000
+  }
+}

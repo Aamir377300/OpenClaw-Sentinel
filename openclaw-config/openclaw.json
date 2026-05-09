@@ -1,0 +1,105 @@
+{
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+    },
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789"
+      ]
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": "${OPENCLAW_MODEL}",
+      "bootstrapMaxChars": 2000,
+      "bootstrapTotalMaxChars": 4000
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "nvidia_nim": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1",
+        "apiKey": "${NVIDIA_API_KEY}",
+        "models": [
+          {
+            "id": "${NVIDIA_MODEL}",
+            "name": "NVIDIA NIM Model",
+            "contextWindow": 131072
+          }
+        ]
+      },
+      "groq": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "apiKey": "${GROQ_API_KEY}",
+        "models": [
+          {
+            "id": "${GROQ_MODEL}",
+            "name": "Groq Model"
+          }
+        ]
+      },
+      "openai": {
+        "apiKey": "${OPENAI_API_KEY}",
+        "models": [
+          {
+            "id": "${OPENAI_MODEL}",
+            "name": "OpenAI Model"
+          }
+        ]
+      }
+    }
+  },
+  "skills": {
+    "entries": {
+      "weather": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      },
+      "healthcheck": {
+        "enabled": false
+      },
+      "node-connect": {
+        "enabled": false
+      },
+      "skill-creator": {
+        "enabled": false
+      },
+      "taskflow": {
+        "enabled": false
+      },
+      "taskflow-inbox-triage": {
+        "enabled": false
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "nvidia_nim": {
+        "enabled": true
+      },
+      "groq": {
+        "enabled": true
+      },
+      "openai": {
+        "enabled": true
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.5.7",
+    "lastTouchedAt": "2026-05-10T15:30:21.083Z"
+  }
+}

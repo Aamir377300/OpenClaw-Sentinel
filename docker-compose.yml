@@ -1,0 +1,124 @@
+# =============================================================================
+# OpenClaw Production Stack
+#
+# Gateway:  uses the official pre-built image ghcr.io/openclaw/openclaw
+#           — NO local build required, no OOM risk
+# Bridge:   builds locally from ./bridge (lightweight Node.js app)
+#
+# Security:
+#   - Both services run as non-root user "node" (UID 1000)
+#   - Workspace mounted read/write only to the bridge container
+#   - No privileged mode, no host network
+#   - Secrets injected via environment variables from .env
+# =============================================================================
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # OpenClaw Gateway — official pre-built image (no local compile needed)
+  # Port: 18789 (official default, not 3000)
+  # ---------------------------------------------------------------------------
+  gateway:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw-gateway
+    restart: unless-stopped
+    user: "node"
+    cap_drop:
+      - NET_RAW
+      - NET_ADMIN
+    security_opt:
+      - no-new-privileges:true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      HOME: /home/node
+      NODE_ENV: production
+      # Pin container-side paths (prevents host path leaking in)
+      OPENCLAW_CONFIG_DIR: /home/node/.openclaw
+      OPENCLAW_WORKSPACE_DIR: /home/node/.openclaw/workspace
+      # Auth token — required when binding to lan (0.0.0.0)
+      OPENCLAW_GATEWAY_TOKEN: ${OPENCLAW_GATEWAY_TOKEN}
+      # LLM Providers
+      NVIDIA_API_KEY: ${NVIDIA_API_KEY}
+      NVIDIA_MODEL: ${NVIDIA_MODEL}
+      GROQ_API_KEY: ${GROQ_API_KEY}
+      GROQ_MODEL: ${GROQ_MODEL}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL}
+      OPENCLAW_MODEL: ${OPENCLAW_MODEL}
+
+    volumes:
+      # Mount our openclaw.json config (provider = Groq, model = llama-3.1-7b-instant)
+      - ./openclaw-config:/home/node/.openclaw:rw
+      # Custom skills — read-only into the gateway
+      - ./custom-skills:/home/node/.openclaw/skills/custom:ro
+    ports:
+      - "127.0.0.1:18789:18789"   # Loopback only — not exposed publicly
+    networks:
+      - openclaw-internal
+    command:
+      [
+        "node", "dist/index.js", "gateway",
+        "--bind", "lan",
+        "--port", "18789",
+        "--allow-unconfigured"
+      ]
+    healthcheck:
+      test:
+        [
+          "CMD", "node", "-e",
+          "fetch('http://127.0.0.1:18789/healthz').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+
+  # ---------------------------------------------------------------------------
+  # Telegram Bridge — built locally (small, fast build ~30s)
+  # ---------------------------------------------------------------------------
+  bridge:
+    build:
+      context: ./bridge
+      dockerfile: Dockerfile
+    image: openclaw-bridge:local
+    container_name: openclaw-bridge
+    restart: unless-stopped
+    user: "node"
+    depends_on:
+      gateway:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_ALLOWED_IDS: ${TELEGRAM_ALLOWED_IDS}
+      SHARED_SECRET: ${SHARED_SECRET}
+      # Internal Docker network — bridge talks to gateway by service name
+      OPENCLAW_GATEWAY_URL: http://gateway:18789
+      OPENCLAW_GATEWAY_TOKEN: ${OPENCLAW_GATEWAY_TOKEN}
+      BRIDGE_PORT: 4000
+      AUDIT_LOG_PATH: /home/node/app/audit_log.json
+      WORKSPACE_DIR: /home/node/app/workspace
+    volumes:
+      # Workspace — read/write for file skill operations
+      - ./workspace:/home/node/app/workspace:rw
+      # Audit log — persisted on the host
+      - ./audit_log.json:/home/node/app/audit_log.json:rw
+    ports:
+      - "127.0.0.1:4000:4000"   # Loopback only
+    networks:
+      - openclaw-internal
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:4000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+# =============================================================================
+# Networks
+# =============================================================================
+networks:
+  openclaw-internal:
+    driver: bridge
+    # internal: false — outbound internet needed for Telegram API + Groq API
