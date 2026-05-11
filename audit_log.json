@@ -1,0 +1,261 @@
+[
+  {
+    "timestamp": "2026-05-10T14:56:45.292Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "can you find the five cheaptest shirts in amazon?",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-10T14:56:45.766Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "can you find the five cheaptest shirts in amazon?",
+    "status": "error",
+    "responseTime": 146,
+    "errorMessage": "Gateway returned HTTP 404"
+  },
+  {
+    "timestamp": "2026-05-10T15:00:00.013Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-10T15:00:00.389Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "error",
+    "responseTime": 59,
+    "errorMessage": "Gateway returned HTTP 404"
+  },
+  {
+    "timestamp": "2026-05-10T15:00:44.860Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-10T15:00:45.244Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "error",
+    "responseTime": 61,
+    "errorMessage": "Gateway returned HTTP 404"
+  },
+  {
+    "timestamp": "2026-05-10T15:24:42.006Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "search: latest tech news",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-10T15:24:43.590Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "search: latest tech news",
+    "status": "error",
+    "responseTime": 1255,
+    "errorMessage": {
+      "message": "internal error",
+      "type": "api_error"
+    }
+  },
+  {
+    "timestamp": "2026-05-10T15:35:33.868Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hu",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-10T15:36:34.268Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hu",
+    "status": "error",
+    "responseTime": 60031,
+    "errorMessage": "Gateway unreachable at http://gateway:18789. Is it running?"
+  },
+  {
+    "timestamp": "2026-05-11T11:18:24.000Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Hello bot, this is for my LFX submission. Please respond to confirm you are alive.",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:18:27.000Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Hello bot, this is for my LFX submission. Please respond to confirm you are alive.",
+    "status": "success",
+    "responseTime": 3000,
+    "toolsUsed": [],
+    "response": "Hello! I am alive and fully operational. Good luck with your LFX submission!"
+  },
+  {
+    "timestamp": "2026-05-11T11:25:38.548Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hello bot",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:25:40.701Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hello bot",
+    "status": "error",
+    "responseTime": 1834,
+    "errorMessage": {
+      "message": "internal error",
+      "type": "api_error"
+    }
+  },
+  {
+    "timestamp": "2026-05-11T11:25:49.654Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hello bot",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:25:50.624Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hello bot",
+    "status": "error",
+    "responseTime": 647,
+    "errorMessage": {
+      "message": "internal error",
+      "type": "api_error"
+    }
+  },
+  {
+    "timestamp": "2026-05-11T11:27:52.486Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "ello bot, are you there?",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:28:50.655Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "ello bot, are you there?",
+    "status": "success",
+    "responseTime": 57817
+  },
+  {
+    "timestamp": "2026-05-11T11:28:51.246Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Hello bot, are you there?",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:29:51.962Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Hello bot, are you there?",
+    "status": "error",
+    "responseTime": 60018,
+    "errorMessage": "Gateway unreachable at http://gateway:18789. Is it running?"
+  },
+  {
+    "timestamp": "2026-05-11T11:29:52.557Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:30:02.773Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "success",
+    "responseTime": 9828
+  },
+  {
+    "timestamp": "2026-05-11T11:34:41.861Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:35:03.090Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "success",
+    "responseTime": 20902
+  },
+  {
+    "timestamp": "2026-05-11T11:38:14.651Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Create a folder name LFDT and write it, i am apply for lFX mentorship and then delete the file.",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:38:50.748Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Create a folder name LFDT and write it, i am apply for lFX mentorship and then delete the file.",
+    "status": "error",
+    "responseTime": 35774,
+    "errorMessage": {
+      "message": "internal error",
+      "type": "api_error"
+    }
+  },
+  {
+    "timestamp": "2026-05-11T11:40:55.880Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Hi bot, I am recording this for my LFX mentorship submission.",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:40:58.278Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Hi bot, I am recording this for my LFX mentorship submission.",
+    "status": "error",
+    "responseTime": 2072,
+    "errorMessage": {
+      "message": "internal error",
+      "type": "api_error"
+    }
+  },
+  {
+    "timestamp": "2026-05-11T11:42:37.528Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "hi",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:45:35.897Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Hi bot, I am recording this for my LFX mentorship submission.",
+    "status": "received"
+  },
+  {
+    "timestamp": "2026-05-11T11:46:35.079Z",
+    "userId": "1107045865",
+    "username": "amir123khan",
+    "prompt": "Hi bot, I am recording this for my LFX mentorship submission.",
+    "status": "success",
+    "responseTime": 58825
+  }
+]

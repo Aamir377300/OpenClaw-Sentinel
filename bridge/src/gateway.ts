@@ -49,7 +49,7 @@ export async function forwardToGateway(
   const response = await axios.post(
     `${config.gatewayUrl}/v1/chat/completions`,
     body,
-    { headers, timeout: 60_000 }
+    { headers, timeout: 300_000 }
   );
 
   const data = response.data as Record<string, unknown>;

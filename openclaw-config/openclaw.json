@@ -50,6 +50,7 @@
         ]
       },
       "openai": {
+        "baseUrl": "https://api.openai.com/v1",
         "apiKey": "${OPENAI_API_KEY}",
         "models": [
           {

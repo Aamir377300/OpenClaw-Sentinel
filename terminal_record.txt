@@ -1,0 +1,291 @@
+Script started on Mon May 11 17:02:18 2026
+Command: bash -c docker compose down && docker compose up -d && docker ps
+[?25l[0G[+] down 0/1
+ [33m⠋[0m Container openclaw-bridge Stopping                                       [34m0.1s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠙[0m Container openclaw-bridge Stopping                                       [34m0.2s[0m
+[?25h[?25l[2A[0G[+] down 0/1
+ [33m⠹[0m Container openclaw-bridge Stopping                                       [34m0.3s[0m
+[?25h[?25l[2A[0G[+] down 1/2
+ [32m✔[0m Container openclaw-bridge  [32mRemoved[0m                                       [34m0.3s[0m
+ [33m⠋[0m Container openclaw-gateway Stopping                                      [34m0.1s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container openclaw-bridge  [32mRemoved[0m                                       [34m0.3s[0m
+ [33m⠙[0m Container openclaw-gateway Stopping                                      [34m0.2s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container openclaw-bridge  [32mRemoved[0m                                       [34m0.3s[0m
+ [33m⠹[0m Container openclaw-gateway Stopping                                      [34m0.3s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container openclaw-bridge  [32mRemoved[0m                                       [34m0.3s[0m
+ [33m⠸[0m Container openclaw-gateway Stopping                                      [34m0.4s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container openclaw-bridge  [32mRemoved[0m                                       [34m0.3s[0m
+ [33m⠼[0m Container openclaw-gateway Stopping                                      [34m0.5s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container openclaw-bridge  [32mRemoved[0m                                       [34m0.3s[0m
+ [33m⠴[0m Container openclaw-gateway Stopping                                      [34m0.6s[0m
+[?25h[?25l[3A[0G[+] down 1/2
+ [32m✔[0m Container openclaw-bridge  [32mRemoved[0m                                       [34m0.3s[0m
+ [33m⠦[0m Container openclaw-gateway Stopping                                      [34m0.7s[0m
+[?25h[?25l[3A[0G[+] down 2/3
+ [32m✔[0m Container openclaw-bridge          [32mRemoved[0m                               [34m0.3s[0m
+ [32m✔[0m Container openclaw-gateway         [32mRemoved[0m                               [34m0.7s[0m
+ [33m⠋[0m Network openclaw_openclaw-internal Removing                              [34m0.1s[0m
+[?25h[?25l[4A[0G[+] down 2/3
+ [32m✔[0m Container openclaw-bridge          [32mRemoved[0m                               [34m0.3s[0m
+ [32m✔[0m Container openclaw-gateway         [32mRemoved[0m                               [34m0.7s[0m
+ [33m⠙[0m Network openclaw_openclaw-internal Removing                              [34m0.2s[0m
+[?25h[?25l[4A[0G[+] down 3/3
+ [32m✔[0m Container openclaw-bridge          [32mRemoved[0m                               [34m0.3s[0m
+ [32m✔[0m Container openclaw-gateway         [32mRemoved[0m                               [34m0.7s[0m
+ [32m✔[0m Network openclaw_openclaw-internal [32mRemoved[0m                               [34m0.2s[0m
+[?25h[?25l[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [32m✔[0m Container openclaw-gateway         [32mCreated[0m                               [34m0.1s[0m
+ [33m⠋[0m Container openclaw-bridge          Creating                              [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠙[0m Container openclaw-gateway         Starting                              [34m0.2s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠹[0m Container openclaw-gateway         Starting                              [34m0.3s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠸[0m Container openclaw-gateway         Waiting                               [34m0.4s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠼[0m Container openclaw-gateway         Waiting                               [34m0.5s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠴[0m Container openclaw-gateway         Waiting                               [34m0.6s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠦[0m Container openclaw-gateway         Waiting                               [34m0.7s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠧[0m Container openclaw-gateway         Waiting                               [34m0.8s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠇[0m Container openclaw-gateway         Waiting                               [34m0.9s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠏[0m Container openclaw-gateway         Waiting                               [34m1.0s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠋[0m Container openclaw-gateway         Waiting                               [34m1.1s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠙[0m Container openclaw-gateway         Waiting                               [34m1.2s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠹[0m Container openclaw-gateway         Waiting                               [34m1.3s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠸[0m Container openclaw-gateway         Waiting                               [34m1.4s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠼[0m Container openclaw-gateway         Waiting                               [34m1.5s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠴[0m Container openclaw-gateway         Waiting                               [34m1.6s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠦[0m Container openclaw-gateway         Waiting                               [34m1.7s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠧[0m Container openclaw-gateway         Waiting                               [34m1.8s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠇[0m Container openclaw-gateway         Waiting                               [34m1.9s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠏[0m Container openclaw-gateway         Waiting                               [34m2.0s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠋[0m Container openclaw-gateway         Waiting                               [34m2.1s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠙[0m Container openclaw-gateway         Waiting                               [34m2.2s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠹[0m Container openclaw-gateway         Waiting                               [34m2.3s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠸[0m Container openclaw-gateway         Waiting                               [34m2.4s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠼[0m Container openclaw-gateway         Waiting                               [34m2.5s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠴[0m Container openclaw-gateway         Waiting                               [34m2.6s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠦[0m Container openclaw-gateway         Waiting                               [34m2.7s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠧[0m Container openclaw-gateway         Waiting                               [34m2.8s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠇[0m Container openclaw-gateway         Waiting                               [34m2.9s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠏[0m Container openclaw-gateway         Waiting                               [34m3.0s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠋[0m Container openclaw-gateway         Waiting                               [34m3.1s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠙[0m Container openclaw-gateway         Waiting                               [34m3.2s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠹[0m Container openclaw-gateway         Waiting                               [34m3.3s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠸[0m Container openclaw-gateway         Waiting                               [34m3.4s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠼[0m Container openclaw-gateway         Waiting                               [34m3.5s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠴[0m Container openclaw-gateway         Waiting                               [34m3.6s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠦[0m Container openclaw-gateway         Waiting                               [34m3.7s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠧[0m Container openclaw-gateway         Waiting                               [34m3.8s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠇[0m Container openclaw-gateway         Waiting                               [34m3.9s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠏[0m Container openclaw-gateway         Waiting                               [34m4.0s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠋[0m Container openclaw-gateway         Waiting                               [34m4.1s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠙[0m Container openclaw-gateway         Waiting                               [34m4.2s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠹[0m Container openclaw-gateway         Waiting                               [34m4.3s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠸[0m Container openclaw-gateway         Waiting                               [34m4.4s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠼[0m Container openclaw-gateway         Waiting                               [34m4.5s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠴[0m Container openclaw-gateway         Waiting                               [34m4.6s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠦[0m Container openclaw-gateway         Waiting                               [34m4.7s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠧[0m Container openclaw-gateway         Waiting                               [34m4.8s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠇[0m Container openclaw-gateway         Waiting                               [34m4.9s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠏[0m Container openclaw-gateway         Waiting                               [34m5.0s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠋[0m Container openclaw-gateway         Waiting                               [34m5.1s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠙[0m Container openclaw-gateway         Waiting                               [34m5.2s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠹[0m Container openclaw-gateway         Waiting                               [34m5.3s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠸[0m Container openclaw-gateway         Waiting                               [34m5.4s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠼[0m Container openclaw-gateway         Waiting                               [34m5.5s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠴[0m Container openclaw-gateway         Waiting                               [34m5.6s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠦[0m Container openclaw-gateway         Waiting                               [34m5.7s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [33m⠧[0m Container openclaw-gateway         Waiting                               [34m5.8s[0m
+ [32m✔[0m Container openclaw-bridge          [32mCreated[0m                               [34m0.0s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [32m✔[0m Container openclaw-gateway         [32mHealthy[0m                               [34m5.8s[0m
+ [33m⠙[0m Container openclaw-bridge          Starting                              [34m5.8s[0m
+[?25h[?25l[4A[0G[+] up 2/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [32m✔[0m Container openclaw-gateway         [32mHealthy[0m                               [34m5.8s[0m
+ [33m⠹[0m Container openclaw-bridge          Starting                              [34m5.9s[0m
+[?25h[?25l[4A[0G[+] up 3/3
+ [32m✔[0m Network openclaw_openclaw-internal [32mCreated[0m                               [34m0.0s[0m
+ [32m✔[0m Container openclaw-gateway         [32mHealthy[0m                               [34m5.8s[0m
+ [32m✔[0m Container openclaw-bridge          [32mStarted[0m                               [34m6.0s[0m
+[?25hCONTAINER ID   IMAGE                              COMMAND                  CREATED         STATUS                                     PORTS                        NAMES
+4a2e12cb905e   openclaw-bridge:local              "docker-entrypoint.s…"   6 seconds ago   Up Less than a second (health: starting)   127.0.0.1:4000->4000/tcp     openclaw-bridge
+8dad883de08a   ghcr.io/openclaw/openclaw:latest   "docker-entrypoint.s…"   6 seconds ago   Up 6 seconds (healthy)                     127.0.0.1:18789->18789/tcp   openclaw-gateway
+
+Command exit status: 0
+Script done on Mon May 11 17:02:26 2026
