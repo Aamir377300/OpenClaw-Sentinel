@@ -1,11 +1,11 @@
-# 🤖 OpenClaw: Security-Hardened Autonomous Agent Bridge
+# 🤖 OpenClaw Sentinel: Security-Hardened Autonomous Agent Bridge
 
 [![Status](https://img.shields.io/badge/Status-Production--Ready-success.svg?style=for-the-badge)]()
 [![Security](https://img.shields.io/badge/Security-HMAC--SHA256-blue.svg?style=for-the-badge)]()
 [![Orchestration](https://img.shields.io/badge/Orchestration-Docker-0db7ed.svg?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)]()
 
-**OpenClaw** is a security-first extension of the OpenClaw framework, designed to deploy autonomous AI agents in production environments. It bridges the gap between raw LLM intelligence and real-world execution through a hardened Telegram interface, featuring custom toolkits and a zero-trust communication layer.
+**OpenClaw Sentinel** is a security-first extension of the OpenClaw framework, designed to deploy autonomous AI agents in production environments. It bridges the gap between raw LLM intelligence and real-world execution through a hardened Telegram interface, featuring custom toolkits and a zero-trust communication layer.
 
 ---
 
@@ -116,3 +116,4 @@ docker compose up --build -d
 ```
 
 ---
+<p align="center">OpenClaw Sentinel | Built for performance. Hardened for security.</p>
